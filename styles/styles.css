@@ -157,9 +157,13 @@ button {
     .fields select
     {
         font-size: 13px;
-        padding: 15px;
-
     }
+    .fields input[type="text"],
+    .fields input[type="date"],
+    .fields select {
+        padding: 105px; /* Регулируйте отступ по вашему желанию */
+    }
+
 
     .bt 
     {
