@@ -1,0 +1,173 @@
+/* styles.css */
+@import url('https://fonts.cdnfonts.com/css/aeroport');
+
+body {
+    font-family: 'Aeroport', sans-serif;
+    margin: 0;
+    padding: 0;
+
+}
+
+nav {
+    margin-top: 10px;
+    margin-right: 10px;
+
+    background-color: #ffffff;
+    overflow: hidden;
+    font-size: 36px;
+    display: flex; /* Используем flexbox */
+    justify-content: center; /* Центрируем элементы по горизонтали */
+    align-items: center; /* Выравниваем элементы по вертикали */
+    font-weight: normal; /* Сброс жирности шрифта */
+    white-space: nowrap; 
+}
+
+nav a {
+    color: #2466E4;
+    text-align: center;
+    padding: 14px 16px;
+    width: 80%;
+    text-decoration: none; /* Убираем подчеркивание */
+}
+
+nav a:hover {
+    background-color: #2466E4;
+    height: 80%; /* Выравниваем высоту с текстом */
+    color: white;
+    border-radius: 40px;
+}
+
+.img img {
+    height: 100px; /* Выравниваем высоту с текстом */
+    width: auto;
+}
+
+.img:hover {
+    background-color: #ffffff;
+    border-radius: 0; /* Отключаем эффект при наведении на SVG */
+}
+.greeting
+{
+    flex-direction: column;
+    margin-left: 20px; /* Увеличил отступ слева, чтобы учесть ширину картинки */
+    margin-right: 20px;
+    display: flex; /* Используем flexbox */
+    justify-content: center; /* Центрируем элементы по горизонтали */
+    align-items: center; /* Выравниваем элементы по вертикали */
+} 
+.greeting img
+{
+    margin-left: 20px; /* Увеличил отступ слева, чтобы учесть ширину картинки */
+    margin-right: 20px;
+    margin-bottom: 20px;
+    width: 80%;
+    height: auto;
+} 
+.description img
+{
+    margin-left: 20px; /* Увеличил отступ слева, чтобы учесть ширину картинки */
+    margin-right: 20px;
+    margin-bottom: 20px;
+    width: 80%;
+    height: auto;
+} 
+.fields {
+    flex-direction: column;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    background-color: #D9D9D9;
+    width: 80%;
+    margin: 20px auto; /* Убрал левый и правый отступ, добавил auto для автоматического центрирования по горизонтали */
+    padding: 20px; /* Добавил отступы внутри блока для более красивого вида */
+    border-radius: 50px; /* Исправил значение радиуса */
+    color: #2466E4;
+    font-size: 36px;
+}
+.fields input {
+    margin-bottom: 10px;
+    padding: 10px;
+    width: 100%;
+    box-sizing: border-box; /* Учитывать padding и border внутри width */
+    border: 1px solid #ccc;
+    border-radius: 50px;
+    font-size: 36px;
+    color: #2466E4;
+    font-family: 'Aeroport', sans-serif;
+
+}
+
+.fields select {
+    margin-bottom: 10px;
+    padding: 10px;
+    width: 100%;
+    box-sizing: border-box;
+    border-radius: 50px;
+    font-size: 36px;
+    color: #2466E4;
+    font-family: 'Aeroport', sans-serif;
+
+}
+button {
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 81%;
+    aspect-ratio: 12/1;
+    height: auto;
+    margin: 20px auto; /* Центрируем кнопку по горизонтали и добавляем отступ сверху и снизу */
+    color: #ffffff;
+    font-size: 36px;
+    background-color: #2466E4;
+    font-family: 'Aeroport', sans-serif;
+    border-radius: 60px;
+    border: none;
+}
+
+.bt 
+{
+    font-size: 36px;
+    background-color: #2466E4;
+    font-family: 'Aeroport', sans-serif;
+}
+
+@media screen and (max-width: 600px) {
+
+
+    nav {
+        font-size: 10px;
+        /* Растягиваем элементы по ширине */
+    }
+
+    nav a {
+        width: 80%; /* Ширина по содержимому */
+    }
+    .img img
+    {
+        height: 40px; /* Выравниваем высоту с текстом */
+        width: auto;
+    }
+    .greeting img,
+    .description img {
+        width: 100%; /* Ширина по ширине экрана */
+    }
+    .fields,
+    .fields input,
+    .fields select
+    {
+        font-size: 13px;
+
+    }
+
+    .bt 
+    {
+        font-size: 13px;
+        background-color: #2466E4;
+        font-family: 'Aeroport', sans-serif;
+    }
+    
+    
+}
+
+
