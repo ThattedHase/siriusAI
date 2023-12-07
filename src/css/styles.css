@@ -5,7 +5,6 @@ body {
     font-family: 'Aeroport', sans-serif;
     margin: 0;
     padding: 0;
-
 }
 
 nav {
@@ -19,7 +18,7 @@ nav {
     justify-content: center; /* Центрируем элементы по горизонтали */
     align-items: center; /* Выравниваем элементы по вертикали */
     font-weight: normal; /* Сброс жирности шрифта */
-    white-space: nowrap; 
+    white-space: nowrap;
 }
 
 nav a {
@@ -46,31 +45,32 @@ nav a:hover {
     background-color: #ffffff;
     border-radius: 0; /* Отключаем эффект при наведении на SVG */
 }
-.greeting
-{
+
+.greeting {
     flex-direction: column;
     margin-left: 20px; /* Увеличил отступ слева, чтобы учесть ширину картинки */
     margin-right: 20px;
     display: flex; /* Используем flexbox */
     justify-content: center; /* Центрируем элементы по горизонтали */
     align-items: center; /* Выравниваем элементы по вертикали */
-} 
-.greeting img
-{
+}
+
+.greeting img {
     margin-left: 20px; /* Увеличил отступ слева, чтобы учесть ширину картинки */
     margin-right: 20px;
     margin-bottom: 20px;
     width: 80%;
     height: auto;
-} 
-.description img
-{
+}
+
+.description img {
     margin-left: 20px; /* Увеличил отступ слева, чтобы учесть ширину картинки */
     margin-right: 20px;
     margin-bottom: 20px;
     width: 80%;
     height: auto;
-} 
+}
+
 .fields {
     flex-direction: column;
     display: flex;
@@ -84,6 +84,7 @@ nav a:hover {
     color: #2466E4;
     font-size: 36px;
 }
+
 .fields input {
     margin-bottom: 10px;
     padding: 10px;
@@ -94,7 +95,6 @@ nav a:hover {
     font-size: 36px;
     color: #2466E4;
     font-family: 'Aeroport', sans-serif;
-
 }
 
 .fields select {
@@ -106,10 +106,9 @@ nav a:hover {
     font-size: 36px;
     color: #2466E4;
     font-family: 'Aeroport', sans-serif;
-
 }
-button {
 
+button {
     display: flex;
     justify-content: center;
     align-items: center;
@@ -125,16 +124,13 @@ button {
     border: none;
 }
 
-.bt 
-{
+.bt {
     font-size: 36px;
     background-color: #2466E4;
     font-family: 'Aeroport', sans-serif;
 }
 
 @media screen and (max-width: 600px) {
-
-
     nav {
         font-size: 10px;
         /* Растягиваем элементы по ширине */
@@ -143,31 +139,27 @@ button {
     nav a {
         width: 80%; /* Ширина по содержимому */
     }
-    .img img
-    {
+
+    .img img {
         height: 40px; /* Выравниваем высоту с текстом */
         width: auto;
     }
+
     .greeting img,
     .description img {
         width: 100%; /* Ширина по ширине экрана */
     }
+
     .fields,
     .fields input,
-    .fields select
-    {
+    .fields select {
         font-size: 13px;
 
     }
 
-    .bt 
-    {
+    .bt {
         font-size: 13px;
         background-color: #2466E4;
         font-family: 'Aeroport', sans-serif;
     }
-    
-    
 }
-
-
