@@ -97,15 +97,18 @@ nav a:hover {
     padding-top: 10px;
     padding-left: 20px;
     width: 100%;
+    height: 50%;
     box-sizing: border-box; /* Учитывать padding и border внутри width */
     border: 1px solid #ccc;
     border-radius: 50px;
     font-size: 36px;
     color: #2466E4;
+    font-weight: 5;
     font-family: 'Aeroport', sans-serif;
 }
 
 .fields select {
+    font-weight: 5;
     margin-bottom: 10px;
     padding-top: 10px;
     padding-bottom: 10px;
@@ -119,6 +122,7 @@ nav a:hover {
 }
 .fields option
 {
+    font-weight: 5;
     font-size: 1.5rem;
     padding-left: 20px;
 }
