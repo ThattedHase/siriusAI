@@ -1,4 +1,4 @@
-@import url("https://fonts.cdnfonts.com/css/aeroport");
+@import url('https://fonts.cdnfonts.com/css/aeroport');
 
 body {
     font-family: "Aeroport", sans-serif;
@@ -9,10 +9,11 @@ body {
 nav {
     height: 5em;
     font-size: large;
+    background-color: white;
 }
 
 nav a {
-    color: #2466E4;
+    color: #01B1A6;
     text-align: center;
     padding: 14px 16px;
     text-decoration: none;
@@ -29,6 +30,8 @@ nav img {
 #navbarNavAltMarkup {
     justify-content: center !important;
     column-gap: 5%;
+    background-color: white;
+
 }
 
 .greeting {
@@ -69,11 +72,11 @@ main {
     flex-direction: column;
     display: flex;
     align-items: flex-start;
-    background-color: #D9D9D9;
+    background-color: #E4E5E6;
     width: 40%;
     padding: 20px;
     border-radius: 50px;
-    color: #2466E4;
+    color: #01B1A6;
     font-size: larger;
 }
 
@@ -90,7 +93,7 @@ main {
 }
 
 a.active {
-    background-color: #2466E4;
+    background-color: #01B1A6;
     color: white;
     border-radius: 15px;
 }
@@ -107,14 +110,18 @@ a.active {
     width: 100%;
     height: 50%;
     box-sizing: border-box;
-    border: 1px solid #ccc;
+    border: 1px solid #E4E5E6;
     border-radius: 30px;
-    color: #2466E4;
+    color: #01B1A6;
 }
 
 .fields button {
+    background-color: #01B1A6;
     width: 100%;
     border-radius: 50px;
+    color:white;
+    border: none;
+
 }
 
 .fields select {
@@ -125,7 +132,7 @@ a.active {
     width: 100%;
     box-sizing: border-box;
     border-radius: 50px;
-    color: #2466E4;
+    color: #01B1A6;
     border: none;
     outline: none;
     background-color: white;
