@@ -1,7 +1,9 @@
+<<<<<<< HEAD
 @import url('https://fonts.cdnfonts.com/css/aeroport');
 
+=======
+>>>>>>> 2f9ba9292e6aa43d91074a96988106427ce50569
 body {
-    font-family: "Aeroport", sans-serif;
     margin: 0;
     padding: 0;
 }
@@ -75,8 +77,13 @@ main {
     background-color: #E4E5E6;
     width: 40%;
     padding: 20px;
+<<<<<<< HEAD
     border-radius: 50px;
     color: #01B1A6;
+=======
+    border-radius: 30px;
+    color: #2466E4;
+>>>>>>> 2f9ba9292e6aa43d91074a96988106427ce50569
     font-size: larger;
 }
 
