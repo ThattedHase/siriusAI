@@ -1,4 +1,7 @@
+@import url('https://fonts.cdnfonts.com/css/aeroport');
+
 body {
+    font-family: 'Aeroport', sans-serif;
     margin: 0;
     padding: 0;
 }
@@ -14,6 +17,8 @@ nav a {
     text-align: center;
     padding: 14px 16px;
     text-decoration: none;
+    font-family: 'Aeroport', sans-serif;
+    font-weight: 5;
 }
 
 nav a:hover {
@@ -41,9 +46,7 @@ nav img {
 }
 
 .greeting img {
-    margin-left: 20px;
-    margin-right: 20px;
-    margin-bottom: 20px;
+    margin: 20px;
     width: 80%;
     height: auto;
 }
@@ -75,6 +78,8 @@ main {
     border-radius: 50px;
     color: #01B1A6;
     font-size: larger;
+    font-family: 'Aeroport', sans-serif;
+
 }
 
 .fields .row {
@@ -87,6 +92,9 @@ main {
     display: flex;
     justify-content: center;
     align-items: center;
+    font-family: 'Aeroport', sans-serif;
+
+
 }
 
 a.active {
@@ -97,6 +105,7 @@ a.active {
 
 .fields label {
     width: 100%;
+    font-weight: 500;
 }
 
 .fields textarea, input {
@@ -110,6 +119,7 @@ a.active {
     border: 1px solid #E4E5E6;
     border-radius: 30px;
     color: #01B1A6;
+    font-weight: 5;
 }
 
 .fields button {
@@ -121,7 +131,7 @@ a.active {
 
 }
 
-.fields select {
+.fields select,.fields option {
     margin-bottom: 10px;
     padding-top: 10px;
     padding-bottom: 10px;
@@ -133,6 +143,7 @@ a.active {
     border: none;
     outline: none;
     background-color: white;
+    font-weight: 5;
 }
 
 @media screen and (max-width: 600px) {
