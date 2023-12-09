@@ -6,6 +6,7 @@ body {
     margin: 0;
     padding: 0;
 }
+
 .navbar-nav {
     display: flex;
     align-items: center;
@@ -24,8 +25,7 @@ nav {
     white-space: nowrap;
 }
 
-nav a 
-{
+nav a {
     color: #2466E4;
     text-align: center;
     padding: 14px 16px;
@@ -83,8 +83,8 @@ nav a:hover {
     color: #2466E4;
     font-size: 36px;
 }
-.active
-{
+
+.active {
     background-color: #2466E4;
     height: 80%; /* Выравниваем высоту с текстом */
     color: white;
@@ -120,15 +120,14 @@ nav a:hover {
     color: #2466E4;
     font-family: 'Aeroport', sans-serif;
 }
-.fields option
-{
+
+.fields option {
     font-weight: 5;
     font-size: 1.5rem;
     padding-left: 20px;
 }
 
-.row
-{
+.row {
     flex-direction: row;
     display: flex;
     flex-wrap: wrap;
@@ -136,12 +135,11 @@ nav a:hover {
     width: 100%;
 }
 
-.column
-{
+.column {
     flex: 0 0 48%;
 }
-.column input,
-.column select {
+
+.column input, .column select {
     width: 100%;
     box-sizing: border-box;
 }
@@ -186,8 +184,7 @@ button {
     .fields,
     .fields input,
     .fields select,
-    .fields option
-    {
+    .fields option {
         font-size: 20px;
     }
 
@@ -196,12 +193,9 @@ button {
     }
 
 
-    .greeting img,
-    .description img {
+    .greeting img, .description img {
         width: 100%; /* Ширина по ширине экрана */
     }
-    
-
 
     .bt {
         font-size: 20px;
