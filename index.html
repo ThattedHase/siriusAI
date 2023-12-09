@@ -1,48 +1,71 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="ru">
 
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>AI</title>
     <link rel="stylesheet" href="src/css/styles.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css"
+          rel="stylesheet"
+          integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN"
+          crossorigin="anonymous">
 </head>
 
 <body>
-    <!-- Навигационная панель -->
-    <nav class="navbar navbar-expand-lg navbar-light bg-light">
-        <div class="navbar-nav">
-            <a>
-            <img class = "navbar-brand" src="img/logo.svg" alt="Логотип">
-            </a>
+    <nav class="navbar navbar-expand-lg bg-body-tertiary">
+        <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+            <a href="#"><img class="navbar-brand" src="img/logo.svg" alt="Логотип"></a>
             <a href="./team.html">О проекте</a>
             <a href="#">Примеры</a>
-            <a href="./index.html"  class = "active" >Рекомендация врачей</a>
+            <a href="./index.html" class="active">Рекомендация врачей</a>
         </div>
     </nav>
-    <div class = "fields">
-        <div class = "row">
-            <div class = "column">
-                Дата рождения:
-                <input type="date">
+    <main>
+        <form class="fields">
+            <div class="row">
+                <div class="col-xl-6">
+                    <label>
+                        Дата рождения:
+                        <input type="date">
+                    </label>
+                </div>
+                <div class="col-xl-6">
+                    <label>
+                        Пол:
+                        <select name="gender">
+                            <option value="male">Мужской</option>
+                            <option value="female">Женский</option>
+                        </select>
+                    </label>
+                </div>
             </div>
-            <div class = "column">
-                Пол:
-                <select name="gender">
-                    <option value="male">Мужской</option>
-                    <option value="female">Женский</option>
-                </select>
-            </div>
+
+            <label>
+                Жалобы:
+                <textarea name="complaints" required></textarea>
+            </label>
+
+            <label>
+                Перенесённые заболевания:
+                <textarea name="disease" required placeholder="Нет"></textarea>
+            </label>
+
+            <label>
+                Перенесённые операции:
+                <textarea name="surgeries" required placeholder="Нет"></textarea>
+            </label>
+
+            <label>
+                Принимаемые препараты:
+                <textarea name="meds" required placeholder="Нет"></textarea>
+            </label>
+
+            <button type="submit" class="btn btn-primary">Узнать результат</button>
+        </form>
+        <div class="results">
+            Введите данные в форму
         </div>
-        Перенесённые заболевания:
-        <input type="text">
-        Перенесённые операции:
-        <input type="text">
-        Принимаемые препараты:
-        <input type="text">
-        Жалобы:
-        <input type="text">
-    </div>
-    <button type="submit"><p class = "bt">Отправить!</p></button>
+    </main>
 </body>
 </html>
