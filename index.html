@@ -22,20 +22,20 @@
         </div>
     </nav>
     <main>
-        <form class="fields">
+        <form class="fields" action="#" method="post" enctype="multipart/form-data">
             <div class="row">
                 <div class="col-xl-6">
                     <label>
                         Дата рождения:
-                        <input type="date">
+                        <input type="date" name="dob" required>
                     </label>
                 </div>
                 <div class="col-xl-6">
                     <label>
                         Пол:
                         <select name="gender">
-                            <option value="male">Мужской</option>
-                            <option value="female">Женский</option>
+                            <option value="0">Мужской</option>
+                            <option value="1">Женский</option>
                         </select>
                     </label>
                 </div>
@@ -48,17 +48,17 @@
 
             <label>
                 Перенесённые заболевания:
-                <textarea name="disease" required placeholder="Нет"></textarea>
+                <textarea name="diseases" placeholder="Нет"></textarea>
             </label>
 
             <label>
                 Перенесённые операции:
-                <textarea name="surgeries" required placeholder="Нет"></textarea>
+                <textarea name="surgeries" placeholder="Нет"></textarea>
             </label>
 
             <label>
                 Принимаемые препараты:
-                <textarea name="meds" required placeholder="Нет"></textarea>
+                <textarea name="meds" placeholder="Нет"></textarea>
             </label>
 
             <button type="submit">Узнать результат</button>
@@ -67,5 +67,7 @@
             Введите данные в форму
         </div>
     </main>
+
+    <script src="src/main.ts" type="module"></script>
 </body>
 </html>
